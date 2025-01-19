@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box ;
+   
+}
+
+
+.background-container {
+ 
+
+   background: linear-gradient(to right, #ff7e5f, #feb47b);
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top: 20px; 
+}
+
+/* .grid-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensures items wrap to the next line */
+  /* height: 960px; */
+  /* width: 960px; */
+  /* aspect-ratio: 1;Maintains a square aspect ratio */
+/* } */ 
+
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90vw; /* Responsive width */
+  max-width: 960px;
+   aspect-ratio: 1; 
+   margin-bottom: 180px; /* Space below the grid */
+   border: 2px solid black;  
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Space between title and grid */
+   
+}
+
+
+
+.title-container h1{
+    margin-top:20px; 
+    text-transform: uppercase;
+}
+
+
+.rainbow {
+    font-size: 3rem; /* Adjust as needed */
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+
+  .grid-square {
+    flex: 0 0 calc(100% / 16); /* Each square takes up 1/16th of the container's width */
+    height: calc(100% / 16);   /* Each square takes up 1/16th of the container's height */
+    box-sizing: border-box;    /* Includes padding and border in the element's total width and height */
+    border: 2px solid black;    /* Optional: to visualize the squares */
+  }
+ 
+
+  .grid-square:hover {
+    cursor: pointer; /* Change to pointer on hover */
+    
+  }
+
+  #clear{
+    margin-bottom: 20px;
+    
+      background-color: #4CAF50; /* Green background */
+      color: white; /* White text */
+      font-size: 16px; /* Text size */
+      padding: 12px 24px; /* Spacing around text */
+      border: none; /* No border */
+      border-radius: 8px; /* Rounded corners */
+      cursor: pointer; /* Pointer cursor on hover */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      transition: all 0.3s ease; /* Smooth transition */
+    
+    
+  }
+
+  .btnDimension{
+    margin-bottom: 20px;
+    
+      background-color: #4CAF50; /* Green background */
+      color: white; /* White text */
+      font-size: 16px; /* Text size */
+      padding: 12px 24px; /* Spacing around text */
+      border: none; /* No border */
+      border-radius: 8px; /* Rounded corners */
+      cursor: pointer; /* Pointer cursor on hover */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      transition: all 0.3s ease; /* Smooth transition */
+    
+    
+  }
